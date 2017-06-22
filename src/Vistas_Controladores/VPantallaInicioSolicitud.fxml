@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="679.0" prefWidth="904.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Vistas_Controladores.ControladorPantallaInicioSolicitud">
+   <children>
+      <Label layoutX="362.0" layoutY="39.0" prefHeight="20.0" prefWidth="124.0" text="INICIO SOLICITUD">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Separator layoutX="14.0" layoutY="84.0" prefHeight="3.0" prefWidth="865.0" />
+      <Label layoutX="14.0" layoutY="95.0" prefHeight="17.0" prefWidth="77.0" text="Nº REGISTRO" />
+      <TextField fx:id="txtfNRegistro" disable="true" editable="false" layoutX="17.0" layoutY="119.0" text="AUTOGENERADO" />
+      <DatePicker fx:id="fechaSolicitudActividad" layoutX="14.0" layoutY="176.0" />
+      <Label layoutX="14.0" layoutY="152.0" prefHeight="17.0" prefWidth="141.0" text="FECHA INICIO SOLICITUD*" />
+      <Label layoutX="213.0" layoutY="152.0" prefHeight="17.0" prefWidth="141.0" text="FECHA INICIO ACTIVIDAD" />
+      <DatePicker fx:id="fechaInicioActividad" disable="true" editable="false" layoutX="213.0" layoutY="176.0" />
+      <ComboBox fx:id="tipoActividad" layoutX="427.0" layoutY="176.0" prefHeight="25.0" prefWidth="457.0" promptText="SELECCIONE UNA LICENCIA" />
+      <Label layoutX="429.0" layoutY="152.0" prefHeight="17.0" prefWidth="141.0" text="TIPO DE ACTIVIDAD*" />
+      <Label layoutX="14.0" layoutY="286.0" prefHeight="17.0" prefWidth="149.0" text="EMPLAZAMIENTO/LUGAR*" />
+      <TextField fx:id="txtfEmplazamiento" layoutX="14.0" layoutY="310.0" prefHeight="25.0" prefWidth="376.0" />
+      <TextField fx:id="txtfRefCatastral" layoutX="14.0" layoutY="376.0" prefHeight="25.0" prefWidth="376.0" />
+      <Label layoutX="14.0" layoutY="348.0" prefHeight="17.0" prefWidth="149.0" text="REFERENCIA CATASTRAL*" />
+      <Separator layoutX="404.0" layoutY="90.0" orientation="VERTICAL" prefHeight="325.0" prefWidth="0.0" />
+      <Label layoutX="429.0" layoutY="95.0" prefHeight="17.0" prefWidth="195.0" text="ESTADO INICIAL DE LA SOLICITUD*" />
+      <ComboBox fx:id="estadoInicialLicencia" layoutX="429.0" layoutY="119.0" prefWidth="150.0" />
+      <Label layoutX="18.0" layoutY="215.0" prefHeight="17.0" prefWidth="141.0" text="TIPO DE SUELO*" />
+      <ComboBox fx:id="tipoSuelo" layoutX="14.0" layoutY="240.0" prefWidth="150.0" />
+      <Label layoutX="427.0" layoutY="215.0" prefHeight="17.0" prefWidth="176.0" text="DESCRIPCIÓN DE LA ACTIVIDAD" />
+      <TextArea fx:id="txtfDescripcionLicencia" layoutX="427.0" layoutY="235.0" prefHeight="169.0" prefWidth="457.0" />
+      <Separator layoutX="16.0" layoutY="413.0" prefHeight="0.0" prefWidth="800.0" />
+      <Label layoutX="17.0" layoutY="423.0" prefHeight="17.0" prefWidth="253.0" text="DOCUMENTACIÓN NECESARIA APORTADA">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Separator orientation="VERTICAL" prefHeight="200.0" />
+      <Separator layoutX="404.0" layoutY="418.0" orientation="VERTICAL" prefHeight="191.0" prefWidth="6.0" />
+      <CheckBox fx:id="fotocopiaDNI" layoutX="16.0" layoutY="450.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="389.0" text="FOTOCOPIA DNI/NIF/NIE" />
+      <CheckBox fx:id="fotocopiaImpuestoActividad" layoutX="16.0" layoutY="475.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="389.0" text="FOTOCOPIA IMPUESTOS DE ACTIVIDAD" />
+      <CheckBox fx:id="fotografias" layoutX="16.0" layoutY="499.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="389.0" text="FOTOGRAFÍAS (EXTERIORES/INTERIORES)" />
+      <CheckBox fx:id="fotocopiaEscrituras" layoutX="16.0" layoutY="522.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="389.0" text="FOTOCOPIA ESCRITURAS" />
+      <CheckBox fx:id="justificantePago" layoutX="16.0" layoutY="546.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="389.0" text="JUSTIFICANTE DE PAGO" />
+      <CheckBox fx:id="memoriaActividad" layoutX="427.0" layoutY="453.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="389.0" text="MEMORIA DE LA ACTIVIDAD" />
+      <CheckBox fx:id="planosLocal" layoutX="427.0" layoutY="478.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="389.0" text="PLANOS DEL LOCAL" />
+      <CheckBox fx:id="fotocopiaLicenciaObraAdaptacion" layoutX="427.0" layoutY="502.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="389.0" text="FOTOCOPIA LICENCIA OBRA DE ADAPTACIÓN" />
+      <CheckBox fx:id="certificadoModelo1" layoutX="427.0" layoutY="525.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="389.0" text="CERTIFICADO MODELO TÉCNICO 1" />
+      <CheckBox fx:id="certificadoModelo2" layoutX="427.0" layoutY="549.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="389.0" text="CERTIFICADO MODELO 2 (COLEGIO ORIGINAL)" />
+      <CheckBox fx:id="otrasAutorizaciones" layoutX="427.0" layoutY="575.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="389.0" text="OTRAS AUTORIZACIONES" />
+      <Label layoutX="427.0" layoutY="423.0" prefHeight="17.0" prefWidth="238.0" text="DOCUMENTACIÓN TÉCNICA APORTADA">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Button fx:id="siguiente" layoutX="18.0" layoutY="620.0" mnemonicParsing="false" onAction="#abrirRegistroTitular" prefHeight="25.0" prefWidth="124.0" text="SIGUIENTE" />
+      <Button fx:id="cancelar" layoutX="754.0" layoutY="620.0" mnemonicParsing="false" onAction="#closeButtonAction" prefHeight="25.0" prefWidth="124.0" text="CANCELAR" />
+      <Label fx:id="camposObligatorios" layoutX="174.0" layoutY="624.0" prefHeight="17.0" prefWidth="560.0" text="CAMPOS OBLIGATORIOS*">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

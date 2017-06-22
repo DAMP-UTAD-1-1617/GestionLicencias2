@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="679.0" prefWidth="904.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Vistas_Controladores.ControladorPantallaRegistroTitular">
+   <children>
+      <Label layoutX="34.0" layoutY="38.0" prefHeight="20.0" prefWidth="285.0" text="INTRODUCE LOS DATOS DEL SOLICITANTE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblNombre" disable="true" layoutX="177.0" layoutY="88.0" text="NOMBRE*" />
+      <Label fx:id="lblApellidos" disable="true" layoutX="364.0" layoutY="89.0" text="APELLIDOS*" />
+      <Label layoutX="34.0" layoutY="87.0" prefHeight="17.0" prefWidth="117.0" text="TIPO SOLICITANTE*" />
+      <ComboBox fx:id="tipoPersona" layoutX="34.0" layoutY="113.0" onAction="#accionTipoSolicitante" prefHeight="25.0" prefWidth="117.0" promptText="SELECCIONE " />
+      <TextField fx:id="txtfNombre" disable="true" layoutX="177.0" layoutY="114.0" prefHeight="25.0" prefWidth="169.0" />
+      <TextField fx:id="txtfApellidos" disable="true" layoutX="364.0" layoutY="114.0" prefHeight="25.0" prefWidth="306.0" />
+      <Separator layoutX="34.0" layoutY="77.0" prefHeight="2.0" prefWidth="854.0" />
+      <Label fx:id="lblRazonSocial" disable="true" layoutX="693.0" layoutY="89.0" text="RAZÓN SOCIAL*" />
+      <TextField fx:id="txtfRazonSocial" disable="true" layoutX="693.0" layoutY="114.0" prefHeight="25.0" prefWidth="194.0" />
+      <Label layoutX="34.0" layoutY="159.0" prefHeight="17.0" prefWidth="117.0" text="DIRECCIÓN*" />
+      <Label layoutX="364.0" layoutY="159.0" prefHeight="17.0" prefWidth="117.0" text="MUNICIPIO*" />
+      <TextField fx:id="txtfDireccion" layoutX="34.0" layoutY="189.0" prefHeight="25.0" prefWidth="313.0" />
+      <TextField fx:id="txtfMunicipio" layoutX="364.0" layoutY="189.0" prefHeight="25.0" prefWidth="169.0" />
+      <Label layoutX="553.0" layoutY="159.0" prefHeight="17.0" prefWidth="117.0" text="CÓDIGO POSTAL" />
+      <TextField fx:id="txtfCodPostal" layoutX="553.0" layoutY="189.0" prefHeight="25.0" prefWidth="117.0" />
+      <TextField fx:id="txtfDNI" layoutX="693.0" layoutY="189.0" prefHeight="25.0" prefWidth="194.0" />
+      <Label layoutX="693.0" layoutY="159.0" prefHeight="17.0" prefWidth="117.0" text="DNI/NIF/NIE*" />
+      <TextField fx:id="txtfTlfFijo" layoutX="34.0" layoutY="257.0" prefHeight="25.0" prefWidth="149.0" />
+      <Label layoutX="34.0" layoutY="226.0" prefHeight="17.0" prefWidth="149.0" text="TELÉFONO FIJO" />
+      <TextField fx:id="txtfTlfMovil" layoutX="197.0" layoutY="257.0" prefHeight="25.0" prefWidth="149.0" />
+      <Label layoutX="197.0" layoutY="226.0" prefHeight="17.0" prefWidth="149.0" text="TELÉFONO MÓVIL" />
+      <Label layoutX="364.0" layoutY="226.0" prefHeight="17.0" prefWidth="149.0" text="CORREO ELECTRÓNICO" />
+      <TextField fx:id="txtfEmail" layoutX="364.0" layoutY="257.0" prefHeight="25.0" prefWidth="306.0" />
+      <Label layoutX="693.0" layoutY="226.0" prefHeight="17.0" prefWidth="35.0" text="FAX" />
+      <TextField fx:id="txtfFax" layoutX="693.0" layoutY="257.0" prefHeight="25.0" prefWidth="194.0" />
+      <Separator layoutX="34.0" layoutY="322.0" prefHeight="3.0" prefWidth="854.0" />
+      <Label fx:id="lblNombreRe" disable="true" layoutX="178.0" layoutY="384.0" text="NOMBRE*" />
+      <Label fx:id="lblApellidosRe" disable="true" layoutX="365.0" layoutY="385.0" text="APELLIDOS*" />
+      <TextField fx:id="txtfNombreRE" disable="true" layoutX="178.0" layoutY="410.0" prefHeight="25.0" prefWidth="169.0" />
+      <TextField fx:id="txtfApellidosRE" disable="true" layoutX="365.0" layoutY="410.0" prefHeight="25.0" prefWidth="306.0" />
+      <Label fx:id="lblDireccionRe" disable="true" layoutX="35.0" layoutY="455.0" prefHeight="17.0" prefWidth="117.0" text="DIRECCIÓN*" />
+      <Label fx:id="lblMunicipioRe" disable="true" layoutX="365.0" layoutY="455.0" prefHeight="17.0" prefWidth="117.0" text="MUNICIPIO*" />
+      <TextField fx:id="txtfDireccionRE" disable="true" layoutX="35.0" layoutY="485.0" prefHeight="25.0" prefWidth="313.0" />
+      <TextField fx:id="txtfMunicipioRE" disable="true" layoutX="365.0" layoutY="485.0" prefHeight="25.0" prefWidth="169.0" />
+      <Label fx:id="lblCPRe" disable="true" layoutX="554.0" layoutY="455.0" prefHeight="17.0" prefWidth="117.0" text="CÓDIGO POSTAL" />
+      <TextField fx:id="txtfCodPostalRE" disable="true" layoutX="554.0" layoutY="485.0" prefHeight="25.0" prefWidth="117.0" />
+      <TextField fx:id="txtfDNIRE" disable="true" layoutX="694.0" layoutY="485.0" prefHeight="25.0" prefWidth="194.0" />
+      <Label fx:id="lblDniRe" disable="true" layoutX="694.0" layoutY="455.0" prefHeight="17.0" prefWidth="117.0" text="DNI/NIF/NIE*" />
+      <TextField fx:id="txtfTlfFijoRE" disable="true" layoutX="35.0" layoutY="553.0" prefHeight="25.0" prefWidth="149.0" />
+      <Label fx:id="lblFijoRe" disable="true" layoutX="35.0" layoutY="522.0" prefHeight="17.0" prefWidth="149.0" text="TELÉFONO FIJO" />
+      <TextField fx:id="txtfTlfMovilRE" disable="true" layoutX="198.0" layoutY="553.0" prefHeight="25.0" prefWidth="149.0" />
+      <Label fx:id="lblMovilRe" disable="true" layoutX="198.0" layoutY="522.0" prefHeight="17.0" prefWidth="149.0" text="TELÉFONO MÓVIL" />
+      <Label fx:id="lblEmailRe" disable="true" layoutX="365.0" layoutY="522.0" prefHeight="17.0" prefWidth="149.0" text="CORREO ELECTRÓNICO" />
+      <TextField fx:id="txtfEmailRE" disable="true" layoutX="365.0" layoutY="553.0" prefHeight="25.0" prefWidth="306.0" />
+      <Label fx:id="lblFaxRe" disable="true" layoutX="694.0" layoutY="522.0" prefHeight="17.0" prefWidth="35.0" text="FAX" />
+      <TextField fx:id="txtfFaxRE" disable="true" layoutX="694.0" layoutY="553.0" prefHeight="25.0" prefWidth="194.0" />
+      <Button fx:id="replicarDatos" disable="true" layoutX="34.0" layoutY="410.0" mnemonicParsing="false" onAction="#accionReplicarDatos" prefHeight="25.0" prefWidth="117.0" text="REPLICAR DATOS" />
+      <Label fx:id="lblRepresentante" disable="true" layoutX="34.0" layoutY="340.0" prefHeight="20.0" prefWidth="313.0" text="INTRODUCE LOS DATOS DEL REPRESENTANTE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Separator layoutX="35.0" layoutY="591.0" prefHeight="3.0" prefWidth="854.0" />
+      <Button fx:id="siguiente" layoutX="35.0" layoutY="619.0" mnemonicParsing="false" onAction="#completarSolicitud" prefHeight="25.0" prefWidth="106.0" text="SIGUIENTE" />
+      <Button fx:id="atras" layoutX="157.0" layoutY="619.0" mnemonicParsing="false" onAction="#accionVolverAtras" prefHeight="25.0" prefWidth="106.0" text="ATRÁS" />
+      <Button fx:id="cancelar" layoutX="781.0" layoutY="619.0" mnemonicParsing="false" onAction="#closeButtonAction" prefHeight="25.0" prefWidth="106.0" text="CANCELAR" />
+      <Label fx:id="informacion" layoutX="35.0" layoutY="297.0" prefHeight="17.0" prefWidth="428.0" />
+      <Label fx:id="camposObligatorios" layoutX="291.0" layoutY="623.0" prefHeight="17.0" prefWidth="474.0" text="Campos Obligatorios*">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <CheckBox fx:id="checkboxRepresentante" layoutX="620.0" layoutY="297.0" mnemonicParsing="false" onAction="#accionCheckBoxRepresentate" text="Soy un solicitante físico y tengo representante" />
+   </children>
+</AnchorPane>

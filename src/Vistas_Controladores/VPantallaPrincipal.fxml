@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="618.0" prefWidth="1114.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Vistas_Controladores.ControladorPantallaPrincipal">
+   <children>
+      <TabPane layoutX="-1.0" layoutY="27.0" prefHeight="585.0" prefWidth="1108.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="POR REGISTRO DE PERSONAS">
+               <content>
+                  <ScrollPane prefHeight="597.0" prefWidth="1108.0">
+                    <content>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="629.0" prefWidth="1132.0">
+                           <children>
+                              <AnchorPane layoutX="-14.0" layoutY="1.0" minHeight="0.0" minWidth="0.0" prefHeight="628.0" prefWidth="1108.0">
+                                 <children>
+                                    <ButtonBar layoutX="29.0" layoutY="14.0" prefHeight="50.0" prefWidth="1070.0">
+                                       <buttons>
+                                          <Button fx:id="inicioSolicitud" mnemonicParsing="false" onAction="#abrirInicioSolicitud" prefHeight="25.0" prefWidth="275.0" text="INICIAR UNA SOLICITUD" />
+                                          <Button fx:id="btnCambioDatosLicencia" disable="true" mnemonicParsing="false" onAction="#abrirCambioDatosLicencia" text="CAMBIO DATOS LICENCIA" />
+                                          <Button fx:id="cambioTitularidad" disable="true" mnemonicParsing="false" onAction="#cambioTitularidad" prefHeight="24.0" prefWidth="198.0" text="CAMBIO DE TITULARIDAD" />
+                                          <Button fx:id="certificadoPDF" mnemonicParsing="false" prefHeight="25.0" prefWidth="198.0" text="MODELO CERTIFICADO PDF" />
+                                          <Button fx:id="historico" mnemonicParsing="false" onAction="#abrirHistorico" prefHeight="25.0" prefWidth="198.0" text="HISTÓRICO TITULARIDAD" />
+                                       </buttons>
+                                    </ButtonBar>
+                                    <TableView fx:id="tabla_persona" layoutX="32.0" layoutY="125.0" onMouseClicked="#mouseClicked" prefHeight="379.0" prefWidth="1062.0">
+                                       <columns>
+                                          <TableColumn fx:id="columnDNI" prefWidth="177.0" text="DNI/CIF/NIE" />
+                                          <TableColumn fx:id="columnNombre" prefWidth="185.0" text="NOMBRE/RAZÓN SOCIAL" />
+                                          <TableColumn fx:id="columnApellidos" prefWidth="237.0" text="APELLIDOS" />
+                                          <TableColumn fx:id="columnLicencia" prefWidth="357.0" text="LICENCIA" />
+                                          <TableColumn fx:id="columnRegistro" prefWidth="105.0" text="REGISTRO" />
+                                       </columns>
+                                    </TableView>
+                                    <TextField layoutX="151.0" layoutY="85.0" prefHeight="25.0" prefWidth="175.0" />
+                                    <Label layoutX="23.0" layoutY="89.0" prefHeight="17.0" prefWidth="128.0" text="BUSCAR POR NOMBRE " />
+                                    <Label layoutX="340.0" layoutY="89.0" prefHeight="17.0" prefWidth="128.0" text="BUSCAR POR DNI" />
+                                    <TextField layoutX="442.0" layoutY="85.0" prefHeight="25.0" prefWidth="175.0" />
+                                    <TextField fx:id="razonSocial" disable="true" editable="false" layoutX="119.0" layoutY="528.0" />
+                                    <Label layoutX="275.0" layoutY="530.0" text="TIPO PERSONA" />
+                                    <TextField fx:id="tipoPersona" disable="true" editable="false" layoutX="368.0" layoutY="528.0" />
+                                    <Label layoutX="23.0" layoutY="530.0" text="RAZÓN SOCIAL" />
+                                    <TextField fx:id="dni" disable="true" editable="false" layoutX="584.0" layoutY="528.0" prefHeight="25.0" prefWidth="120.0" />
+                                    <Label layoutX="527.0" layoutY="532.0" text="CIF/DNI" />
+                                    <TextField fx:id="tlfMovil" disable="true" editable="false" layoutX="771.0" layoutY="528.0" prefHeight="25.0" prefWidth="127.0" />
+                                    <Label layoutX="712.0" layoutY="532.0" text="TLF MÓVIL" />
+                                    <TextField fx:id="direccion" disable="true" editable="false" layoutX="119.0" layoutY="562.0" />
+                                    <Label layoutX="23.0" layoutY="566.0" text="DIRECCIÓN" />
+                                    <TextField fx:id="municipio" disable="true" editable="false" layoutX="367.0" layoutY="562.0" prefHeight="25.0" prefWidth="150.0" />
+                                    <Label layoutX="275.0" layoutY="566.0" prefHeight="17.0" prefWidth="102.0" text="MUNICICPIO" />
+                                    <TextField fx:id="cp" disable="true" editable="false" layoutX="584.0" layoutY="562.0" prefHeight="25.0" prefWidth="118.0" />
+                                    <Label layoutX="908.0" layoutY="530.0" text="TLF FIJO" />
+                                    <TextField fx:id="tlfFIjo" disable="true" editable="false" layoutX="960.0" layoutY="526.0" prefHeight="25.0" prefWidth="127.0" />
+                                    <Label layoutX="527.0" layoutY="566.0" text="CP" />
+                                    <Label layoutX="712.0" layoutY="566.0" prefHeight="17.0" prefWidth="51.0" text="EMAIL" />
+                                    <TextField fx:id="email" disable="true" editable="false" layoutX="771.0" layoutY="562.0" prefHeight="25.0" prefWidth="316.0" />
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </AnchorPane>
+                    </content>
+                  </ScrollPane>
+               </content>
+          </Tab>
+          <Tab text="POR REGISTRO DE LICENCIAS">
+               <content>
+                  <ScrollPane prefHeight="200.0" prefWidth="200.0">
+                    <content>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="779.0" prefWidth="1108.0">
+                           <children>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="624.0" prefWidth="1108.0">
+                                 <children>
+                                    <AnchorPane layoutX="-14.0" minHeight="0.0" minWidth="0.0" prefHeight="934.0" prefWidth="1114.0">
+                                       <children>
+                                          <ButtonBar layoutX="36.0" layoutY="14.0" prefHeight="50.0" prefWidth="1047.0">
+                                             <buttons>
+                                                <Button fx:id="inicioSolicitud2" mnemonicParsing="false" onAction="#abrirInicioSolicitud" prefHeight="25.0" prefWidth="167.0" text="INICIAR UNA SOLICITUD" />
+                                                <Button fx:id="btnCambioDatosLicencia2" disable="true" mnemonicParsing="false" onAction="#abrirCambioDatosLicencia2" text="CAMBIO DATOS LICENCIA" />
+                                                <Button fx:id="cambioTitularidad2" disable="true" mnemonicParsing="false" onAction="#cambioTitularidad2" prefHeight="24.0" prefWidth="198.0" text="CAMBIO DE TITULARIDAD" />
+                                                <Button fx:id="historico2" mnemonicParsing="false" onAction="#abrirHistorico" prefHeight="25.0" prefWidth="198.0" text="HISTÓRICO TITULARIDAD" />
+                                                <Button fx:id="certificadoPDF2" mnemonicParsing="false" prefHeight="25.0" prefWidth="300.0" text="MODELO CERTIFICADO PDF" />
+                                             </buttons>
+                                          </ButtonBar>
+                                          <TableView fx:id="tabla_licencias" layoutX="34.0" layoutY="122.0" onMouseClicked="#mouseClicked2" prefHeight="379.0" prefWidth="1044.0">
+                                             <columns>
+                                                <TableColumn fx:id="columnRegistro2" prefWidth="194.0" text="REGISTRO" />
+                                                <TableColumn fx:id="columnLicencia2" prefWidth="385.00001525878906" text="LICENCIA" />
+                                                <TableColumn fx:id="columnEmplazamiento" minWidth="0.0" prefWidth="155.0" text="EMPLAZAMIENTO" />
+                                                <TableColumn fx:id="columnTipoSuelo" minWidth="0.0" prefWidth="173.0" text="TIPO DE SUELO" />
+                                                <TableColumn fx:id="columnEstadoLicencia" minWidth="0.0" prefWidth="153.0" text="ESTADO DE LA LICENCIA" />
+                                             </columns>
+                                          </TableView>
+                                          <TextField fx:id="txtfBuscaRegistro" layoutX="174.0" layoutY="85.0" prefHeight="25.0" prefWidth="175.0" />
+                                          <Label layoutX="25.0" layoutY="89.0" prefHeight="17.0" prefWidth="146.0" text="BUSCAR POR Nº REGISTRO" />
+                                          <Label layoutX="366.0" layoutY="89.0" prefHeight="17.0" prefWidth="231.0" text="BUSCAR POR TIPO DE LICENCIA" />
+                                          <TextField fx:id="txtfBuscaTipoLicencia" layoutX="558.0" layoutY="85.0" prefHeight="25.0" prefWidth="175.0" />
+                                          <TextArea fx:id="txtAreaDescripcionActividad" disable="true" layoutX="28.0" layoutY="541.0" prefHeight="117.0" prefWidth="312.0" />
+                                          <Label layoutX="29.0" layoutY="516.0" text="DESCRIPCIÓN SDE LA ACTIVIDAD" />
+                                          <Label layoutX="366.0" layoutY="516.0" text="DOCUMENTACIÓN APORTADA POR TITULAR" />
+                                          <CheckBox fx:id="fotocopiaDNI" disable="true" layoutX="362.0" layoutY="554.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="160.0" text="FOTOCOPIA DNI" />
+                                          <CheckBox fx:id="fotocopiaImpuestoActividad" disable="true" layoutX="362.0" layoutY="582.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="233.0" text="FOTOCOPIA IMPUESTO DE ACTIVIDAD" />
+                                          <CheckBox fx:id="fotografias" disable="true" layoutX="361.0" layoutY="616.0" mnemonicParsing="false" text="FOTOGRAFÍAS (INTERIORES/EXTERIORES)" />
+                                          <CheckBox fx:id="fotocopiaObraAdaptacion" disable="true" layoutX="361.0" layoutY="650.0" mnemonicParsing="false" text="FOTOCOPIA LICENCIA OBRA DE ADAPTACIÓN" />
+                                          <CheckBox fx:id="fotocopiaEscritura" disable="true" layoutX="646.0" layoutY="554.0" mnemonicParsing="false" text="FOTOCOPIA ESCRITURA" />
+                                          <CheckBox fx:id="memoriaActividad" disable="true" layoutX="646.0" layoutY="582.0" mnemonicParsing="false" text="MEMORIA DE ACTIVIDAD" />
+                                          <CheckBox fx:id="justificantePago" disable="true" layoutX="646.0" layoutY="616.0" mnemonicParsing="false" text="JUSTIFICANTE DE PAGO" />
+                                          <CheckBox fx:id="otrasAutorizaciones" disable="true" layoutX="646.0" layoutY="650.0" mnemonicParsing="false" text="OTRAS AUTORIZACIONES" />
+                                          <CheckBox fx:id="certificadoModelo2" disable="true" layoutX="861.0" layoutY="582.0" mnemonicParsing="false" text="CERTIFICADO MODELO 2" />
+                                          <CheckBox fx:id="planosLocal" disable="true" layoutX="861.0" layoutY="616.0" mnemonicParsing="false" text="PLANOS DEL LOCAL" />
+                                          <CheckBox fx:id="certificadoModelo1" disable="true" layoutX="861.0" layoutY="554.0" mnemonicParsing="false" text="CERTIFICADO MODELO 1" />
+                                          <Label layoutX="29.0" layoutY="667.0" text="TIPO DE ACTIVIDAD" />
+                                          <TextField fx:id="txtfTipoActividad" disable="true" editable="false" layoutX="29.0" layoutY="684.0" prefHeight="25.0" prefWidth="311.0" />
+                                          <Label layoutX="26.0" layoutY="722.0" prefHeight="17.0" prefWidth="137.0" text="REFERENCIA CATASTRAL" />
+                                          <TextField fx:id="txtfReferenciaCatastral" disable="true" editable="false" layoutX="29.0" layoutY="738.0" prefHeight="25.0" prefWidth="310.0" />
+                                          <TextField fx:id="txtfFechaInicioActividad" disable="true" editable="false" layoutX="361.0" layoutY="738.0" />
+                                          <Label layoutX="361.0" layoutY="722.0" prefHeight="17.0" prefWidth="180.0" text="FECHA INICIO ACTIVIDAD" />
+                                          <Label layoutX="523.0" layoutY="722.0" prefHeight="17.0" prefWidth="180.0" text="FECHA INICIO SOLICITUD" />
+                                          <TextField fx:id="txtfFechaInicioSolicitud" disable="true" editable="false" layoutX="523.0" layoutY="738.0" />
+                                       </children>
+                                    </AnchorPane>
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </AnchorPane>
+                    </content>
+                  </ScrollPane>
+               </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+      <Button fx:id="conexionBBDD" layoutX="14.0" layoutY="2.0" mnemonicParsing="false" onAction="#abrirConexionBBDD" prefHeight="25.0" prefWidth="152.0" text="CONEXIÓN BBDD" />
+   </children>
+</AnchorPane>
